@@ -1,0 +1,59 @@
+@media print {
+	.no_imprimir {
+		display: none;
+	}
+	#reporte_caja{
+		
+		font-size: 9px;
+		color: black;
+	}
+	#tabla_reporte {
+		
+		font-size: 8px !important;
+		color: black !important;
+	}
+	a[href]:after {
+		content:none;
+	}
+	a[href] {
+		content:none;
+	}
+	.alertify-notifier{
+		display: none !important;
+	}
+	.alertify {
+		display: none !important;
+	}
+	
+}
+.row-border { 
+  border: 1px solid;
+  border-bottom: 0px;
+}
+.ui-autocomplete-loading {
+	background: url('../img/ajax-loader.gif') no-repeat right center;
+}
+
+.vcenter {
+	display: inline-block;
+	vertical-align: middle;
+	float: none;
+}
+
+.table-center td {
+	text-align: center;
+}
+
+.ui-datepicker {
+	width: 15.2em;
+	padding: 0.2em 0.2em 0;
+	display: none;
+}
+
+select.ui-datepicker-month {
+	color: #101A26;
+}
+
+.ui-datepicker-year {
+	color: #000000;
+}

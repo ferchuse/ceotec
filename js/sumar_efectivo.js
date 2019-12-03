@@ -1,0 +1,1 @@
+	function sumar_efectivo(){ 			var vales = $("#txt_vales").val();		$("#subtotal_vales").html(vales) ;				var efectivo_dia = Number($("#total_efectivo").html()) ;						$("#efectivo_final").html(Number(efectivo_dia) - Number(vales));				//ALERT(efectivo_dia);		//$("#efectivo_final").html();					}	

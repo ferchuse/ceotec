@@ -1,0 +1,74 @@
+/*
+
+TableCloth
+by Alen Grakalic, brought to you by cssglobe.com
+
+
+general styles*/
+TABLE, TD
+{
+	font: 100% Arial, Helvetica, sans-serif;
+}
+TABLE
+{
+	width: 1095px;
+	border-collapse: collapse;
+	margin: 1em 0 1em -12px;
+	color: #0089CC;
+}
+TH, TD
+{
+	text-align: left;
+	padding: 0.5em;
+	font: normal normal 100 15px / normal Tahoma;
+	border: 1px solid #FFF;
+	text-align: center;
+}
+TH
+{
+	background: #53B2E0 repeat-x;
+	color: #FFF;
+}
+TD
+{
+	background: #E5F1F4;
+}
+/*tablecloth styles*/
+TR.even TD
+{
+	background: #E5F1F4;
+}
+TR.odd TD
+{
+	background: #F8FBFC;
+}
+TH.over, TR.even TH.over, TR.odd TH.over
+{
+	background: #4A98AF;
+}
+TH.down, TR.even TH.down, TR.odd TH.down
+{
+	background: #0690D4;
+}
+TH.selected, TR.even TH.selected, TR.odd TH.selected
+{
+}
+TD.over, TR.even TD.over, TR.odd TD.over
+{
+	background: #CAEAFA;
+}
+TD.down, TR.even TD.down, TR.odd TD.down
+{
+	background: #0690D4;
+	color: #FFF;
+}
+TD.selected, TR.even TD.selected, TR.odd TD.selected
+{
+	background: #CAEAFA;
+	color: #555;
+}
+/*use this if you want to apply different styleing to empty table cells*/
+TD.empty, TR.odd TD.empty, TR.even TD.empty
+{
+	background: #FFF;
+}

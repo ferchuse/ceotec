@@ -1,0 +1,9 @@
+<?php	include "login/login_success.php";	include ("conex.php");	include ("is_selected.php");	$link = Conectarse();	//include_once ("cancelar_movimiento.php");?><html>	<head> 		<meta charset="utf-8" />		<link rel="shortcut icon" href="favicon.ico" />		<title>			Reportes		</title>				<link rel="stylesheet" href="css/layout.css" type="text/css"/>		<link rel="stylesheet" href="css/layout.css" type="text/css" media="print"/>				<script type="text/javascript" src="js/validar.js" charset="utf-8"></script>		<script type="text/javascript" src="js/jquery-1.9.1.js"></script>				<link href="tablecloth/tablecloth.css" rel="stylesheet" type="text/css" media="screen" />		<script type="text/javascript" src="tablecloth/tablecloth.js"></script>	</head>		<body>	<?php		include ("header.php");	?>		<div class="contenido"> 		
+		<div > 			<?php			if($_SESSION["permisos"]== "Administrador"){			?>
+			
+				<div class="div_btn">
+					<a class="btn_menu" id="btn_facturas" href="reporte_caja.php?fecha=<?php echo date("d/m/Y");?>&sucursal=<?php echo $_SESSION["sucursal"]?>">Reporte de Caja</a>
+				</div>
+				
+				<div class="div_btn">					<a class="btn_menu" id="btn_reportes" href="reporte_comisiones.php">Reporte Comisiones</a>				</div>				<div class="div_btn">					<a class="btn_menu" id="btn_reportes" href="reporte_estudios.php">Reporte Estudios</a>				</div>							<?php			}			else{			?>				<div class="div_btn">					<a class="btn_menu" id="btn_facturas" href="reporte_caja.php?fecha=<?php echo date("d/m/Y");?>&sucursal=<?php echo $_SESSION["sucursal"]?>">Reporte de Caja</a>				</div>										<?php			}			?>
+		</div>								</div>	<?php 			include ("footer.php");	?>		</body></html>

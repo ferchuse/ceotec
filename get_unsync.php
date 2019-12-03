@@ -1,0 +1,1 @@
+<?phpinclude("conex.php");$link = Conectarse();$q_detalle = "SELECT * FROM ordenes WHERE sync <> 1";		$result = mysql_query($q_detalle, $link) or die("Error en: $q_detalle".mysql_error());while($row = mysql_fetch_array($result)) {	$id_orden = $row["id_orden"];	$id_paciente = $row["id_paciente"];		?>

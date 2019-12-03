@@ -1,0 +1,6 @@
+BASE DE DATOS
+	TABLA ORDENES
+		
+
+IMPRIMIR TICKET
+	Importe total letra
